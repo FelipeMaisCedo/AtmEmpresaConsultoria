@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="atmempresaconsultoria.cursoandroid.com.atmempresaconsultoria.EmpresaActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/detalhe_empresa"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="155dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="@string/empresa_detalhes"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/darker_gray"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="95dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_padrao"
+            android:text="Vamos começar arrastando um componente qualquer da paleta para o editor visual. Quando você solta o componente, ele exibe bordas ao seu redor com ícones quadrados para redimensionamento nos cantos do componente e ícones circulares para constraints nas laterais dele.  Clique no componente para selecioná-lo. Então, clique e segure um dos ícones circulares (manipuladores de constraints) arrastando até um ponto de ancoragem disponível (a face de outro componente, do parent layout ou uma linha-guia). Quando você soltar, a constraint será criada, com uma margem default separando os dois componentes, como mostrado abaixo:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="96dp" />
+    </ScrollView>
+
+</RelativeLayout>
